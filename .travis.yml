@@ -7,7 +7,6 @@ notifications:
     slack: webhouseteam:82qu1PX5R5wkYNCW5x6fVlhu
 
 script:
-  - cd ./experiments/framework/
   - yarn
   - yarn build
   - cp ./build/index.html ./build/200.html
@@ -15,10 +14,8 @@ script:
 
 deploy:
   provider: surge
-  project: ./experiments/framework/build/
-  #domain: odeum-codejs-exp3.surge.sh
-  #domain: odeum-codejs.surge.sh
-  domain: odeum-codejs.com
+  project: ./build/
+  domain: yournewapp.odeum-codejs.surge.sh
   skip_cleanup: true
   on:
     all_branches: true
