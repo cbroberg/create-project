@@ -1,7 +1,10 @@
 {
   "name": "create-project",
   "version": "0.1.0",
+  "description": "Create a boilerplate project and Github repository for an ODEUM CodeJS App.",
   "private": true,
+  "author": "Christian Broberg",
+  "license": "MIT",
   "dependencies": {
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
