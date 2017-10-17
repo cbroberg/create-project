@@ -59,6 +59,7 @@
 		"space-before-blocks": "error",
 		"arrow-spacing": "error",
 		"react/display-name": 0,
+		"jsx-a11y/href-no-hash": 0,
 		"react/jsx-no-bind": [
 			2,
 			{
