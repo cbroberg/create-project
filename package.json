@@ -1,13 +1,13 @@
 {
   "name": "create-odeum-project",
   "version": "0.1.0",
-  "description": "Create a new project template with Github repository for an ODEUM Code Web App.",
+  "description": "Create a new GitHub project template and repository for an ODEUM Code Web App.",
   "private": true,
   "author": "Christian Broberg",
   "license": "MIT",
   "dependencies": {
-    "odeum-app": "^0.2.22",
-    "odeum-ui": "^0.1.26",
+    "odeum-app": "^0.2.24",
+    "odeum-ui": "^0.1.27",
     "react": "^16.1.0",
     "react-dom": "^16.1.0",
     "react-router-dom": "^4.2.2",

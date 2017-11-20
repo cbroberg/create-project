@@ -13,7 +13,6 @@ import RouteDemo from 'demos/RouteDemo'
 import ReactComp from 'demos/ReactComp'
 import { SimpleDiv } from 'demos/SimpleDiv'
 import { RenderFooterLabel, handleLink } from './demos/FooterLabel'
-import greenTheme from 'demos/greenTheme'
 
 class App extends Component {
 
@@ -48,7 +47,7 @@ class App extends Component {
 
 	render() {
 		return (
-			<AppContainer theme={greenTheme}>
+			<AppContainer>
 				<Header logo={'default'}/>
 				<MenuPanel>
 					<Menu route={'/'} exact helpID={1}>

@@ -1,12 +1,10 @@
 import React, { Component } from 'react'
 import { render } from 'react-dom'
 import { BrowserRouter as Router, Route, } from 'react-router-dom'
-import App from 'App'
 import registerServiceWorker from './registerServiceWorker'
 import './index.css'
+import App from 'App'
 
-
-//TODO Check Hot Reloading
 class AppRouter extends Component {
 	render() {
 		return (
@@ -18,10 +16,21 @@ class AppRouter extends Component {
 		)
 	}
 }
+export default AppRouter
 
 render(
 	<AppRouter />,
 	document.getElementById('root')
 )
+
+if (module.hot) {
+	module.hot.accept('./index'.default, () => {
+		const NextApp = require('./index').default
+		render(
+			<NextApp />,
+			document.getElementById('root')
+		)
+	})
+}
 
 registerServiceWorker()
