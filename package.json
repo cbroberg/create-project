@@ -22,6 +22,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-	"rebuild": "rm yarn.lock && yarn"
+	"rebuild": "rm yarn.lock && yarn",
+	"deploy": "yarn build && cp ./CNAME ./build/CNAME && cd build && surge ./"
   }
 }
